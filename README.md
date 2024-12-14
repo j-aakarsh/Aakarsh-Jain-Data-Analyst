@@ -48,7 +48,8 @@ Modern cities rely on big data to improve governance. This project focuses on us
 
 ### **1. Bid and Contract Dataset**
 
-! [alt image](https://github.com/j-aakarsh/data-analyst/blob/3ed45b944306a20f2f24f6e31ca49f7e4bd88434/Primary%20data%20COV.png)
+Primary Source of Data:
+![alt image](https://github.com/j-aakarsh/data-analyst/blob/3ed45b944306a20f2f24f6e31ca49f7e4bd88434/Primary%20data%20COV.png)
 
 | **Field**             | **Description**                                      |
 |-----------------------|------------------------------------------------------|
@@ -72,9 +73,14 @@ The project was structured into several phases, focusing on data ingestion, wran
 - **Objective**: Store raw municipal datasets securely and efficiently in AWS.
 - **Tools Used**: **Amazon S3**, **AWS CLI**, **AWS Glue**.
 - **Process**:
+
   1. Uploaded raw data (e.g., bids and contracts datasets) into Amazon S3 buckets.
   2. Configured S3 buckets for optimal organization with folders for raw, cleaned, and curated datasets.
   3. Applied **encryption** using AWS Key Management Service (KMS) to secure the data during and after upload.
+
+![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/cov%20ingestion.png) 
+![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/Ingestion%20cov%201.png)
+![KMS](https://github.com/j-aakarsh/data-analyst/blob/0515601c06ae1abbc62cf6941a81048bb3b0138c/KMS%20cov.png)
 
 ---
 
@@ -86,6 +92,9 @@ The project was structured into several phases, focusing on data ingestion, wran
   1. **Data Profiling**:
       - Used AWS Glue DataBrew to profile data for completeness, missing values, and duplicates.
       - Generated summaries to visualize inconsistencies, null values, and data distributions.
+        
+![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cov%20profiling%20and%20cleaning%20drawio.png)
+![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Profiling%20UCW.png)
   2. **Data Wrangling**:
       - Applied **categorical mapping** (e.g., "Yes/No" to "1/0") to prepare qualitative data for analysis.
       - Transformed column data types for compatibility with downstream processes.
@@ -95,10 +104,9 @@ The project was structured into several phases, focusing on data ingestion, wran
       - Removed duplicate rows and irrelevant columns.
       - Filtered out incomplete or invalid records.
       - Stored cleaned datasets in S3 buckets for further processing.
+      
+!{c}(https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cleaning%20COV.png)
 
-📷 **Screenshot Ideas**:
-   - AWS Glue DataBrew profile summary (showing null values or data distributions).
-   - Example of transformations or mappings applied in the DataBrew UI.
 
 ---
 
@@ -113,9 +121,6 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Scheduled the ETL pipeline to process new data uploads automatically.
   3. Stored transformed datasets in **Parquet format** for efficient querying and reduced storage costs.
 
-📷 **Screenshot Ideas**:
-   - ETL pipeline diagram in AWS Glue Studio.
-   - Output configuration showing Parquet file format in S3.
 
 ---
 
@@ -130,9 +135,7 @@ The project was structured into several phases, focusing on data ingestion, wran
       - Trends in contract types and department-specific performance.
   3. Exported query results for visualization.
 
-📷 **Screenshot Ideas**:
-   - AWS Athena interface showing SQL queries and query results.
-   - Visualization of query outputs, such as acceptance rates or bid type distribution.
+![athena](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Athena%20cov.png)
 
 ---
 
@@ -145,11 +148,9 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Applied **versioning** to S3 buckets to retain all modifications to datasets.
   3. Configured **replication rules** to create backups in a separate AWS region.
   4. Implemented lifecycle policies to transition infrequently accessed data to Glacier storage, reducing costs.
+  5. Conducted Architect Analysis to identify potential threats.
 
-📷 **Screenshot Ideas**:
-   - S3 bucket versioning configuration.
-   - Lifecycle policy for Glacier transitions.
-   - Replication rule setup for cross-region backups.
+![arch ana](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Architect%20Cov.png)
 
 ---
 
@@ -163,10 +164,9 @@ The project was structured into several phases, focusing on data ingestion, wran
       - ETL pipeline runtimes and costs.
   2. Set up **alerts** for cost thresholds to avoid overspending.
   3. Enabled **CloudTrail** to log all AWS API activity for governance.
+ 
 
-📷 **Screenshot Ideas**:
-   - CloudWatch dashboard showing resource usage metrics.
-   - CloudTrail log summary highlighting API actions.
+
 
 ---
 
@@ -178,9 +178,6 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Identified key trends, such as no direct correlation between bid amounts and acceptance rates, highlighting the influence of qualitative factors.
   3. Recommended future use of machine learning for deeper analyses.
 
-📷 **Screenshot Ideas**:
-   - Output datasets in S3 (final results in Parquet or CSV).
-   - Graphs or tables illustrating insights from the SQL analysis.
 
 ---
 
@@ -283,10 +280,15 @@ This project aims to identify why some grade appeals were denied due to improper
 1. **Data Collection & Preparation**:
    - Ingest grade appeals and clickstream data into **Amazon S3**.
    - Profile and clean data using **AWS Glue DataBrew**, handling missing values and formatting columns.
+  
+ ![
  ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png) 
-
+ 
 2. **Descriptive Statistics**:
    - Generate summary statistics for numerical features and frequency distributions for categorical features.
+
+
+ ![clickstram data](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Analysisng%20Click%20stram%20data%20UCW.png)
 
 ### 2️⃣ Diagnostic Analysis
 
@@ -298,6 +300,12 @@ This project aims to identify why some grade appeals were denied due to improper
    - Enable encryption using **AWS KMS**.
    - Implement **S3 bucket versioning** and backups with replication rules.
    - Apply lifecycle rules to optimize storage costs.
+   - Use VPC endpoint to download data using the internet securely from a virtual server
+
+!endpoint](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/1.%20Create%20endpoint.png)
+![VS](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/2.%20Create%20a%20virtual%20machine%20UCW.png)
+![backup](
+
 
 ### 3️⃣ Exploratory Analysis
 
@@ -306,11 +314,17 @@ This project aims to identify why some grade appeals were denied due to improper
    - Run SQL queries in **AWS Athena** to analyze form-filling time and appeal outcome patterns.
    - Visualize insights using **AWS ETL Dashboard**.
 
+![glue](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/AWS%20Glue%20UCW.png)
+![catalog](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Catalog%20UCW.png)
+![athena](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Athena%20UCW.png)
+
 ### 4️⃣ Monitoring & Alerts
 
 6. **Monitoring Costs**:
    - Create a dashboard in **AWS CloudWatch** to monitor service usage and costs.
    - Set up alarms for cost threshold breaches.
+
+![alarm](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Alarm%20UCW.png)
 
 ---
 
