@@ -1,7 +1,6 @@
 # Aakarsh Jain
 # 👋 About Me  
-Hi! I'm a passionate **Data Analyst** and aspiring **Machine Learning Enthusiast** with a background in **Mechanical Engineering** and an MBA specializing in **AI applications**. I thrive at the intersection of technology and innovation, exploring data-driven solutions for real-world challenges.  
-
+Hi! I'm a passionate **Data Analyst** and aspiring **Machine Learning Enthusiast** with a background in **Mechanical Engineering** and an MBA specializing in **AI applications**. I  thrive at the intersection of technology and innovation, driving **data-driven solutions** to real-world challenges, including **sustainability** and **renewable energy**. With hands-on experience in building **ETL pipelines**, applying **machine learning algorithms**, and implementing **advanced data analytics**, I'm constantly exploring how data can solve complex problems.
 ## 🔍 What I Do  
 - 🧠 Built machine learning models, including a **KNN-based clustering model** for banking credit card data.  
 - 🛠 Developed pipelines for **ETL processes** using **AWS Glue** for scalable data integration.  
