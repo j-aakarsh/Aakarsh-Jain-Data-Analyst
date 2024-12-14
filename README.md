@@ -16,7 +16,7 @@ I'm always open to collaborating on projects related to **data engineering**, **
 
 ---
 
-# 2. 🌐 AWS Data Analytic Platform for the City of Vancouver
+# 1. 🌐 AWS Data Analytic Platform for the City of Vancouver
 
 ---
 
