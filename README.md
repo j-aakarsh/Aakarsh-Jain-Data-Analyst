@@ -14,137 +14,7 @@ I'm always open to collaborating on projects related to **data engineering**, **
 
 ## 📂 My Projects 
 
-# 1. 📊 Analysis of University Canada West's Grade Appeal Process
-
 ---
-
-## ✨ Project Description
-
-Analyzing university grade appeal data to identify patterns in the appeal process and outcomes, improving the process by understanding time spent on form filling and reasons for appeal refusals.
-
----
-
-## 🏷️ Project Title
-
-**University Grade Appeals Analysis:** An Exploratory, Descriptive, and Diagnostic Data Study
-
----
-
-## 🎯 Objective
-
-To perform exploratory, descriptive, and diagnostic analyses on the university's grade appeal dataset, uncovering patterns, trends, and insights related to appeal decisions. By integrating clickstream data, we aim to enhance the form-filling process and improve appeal outcomes.
-
----
-
-## 💡 Motivation
-
-This project aims to identify why some grade appeals were denied due to improper or incomplete form filling. By analyzing clickstream data tracking time spent on each form page, we hypothesized that complexity or confusion in the form-filling process contributes to denials. Insights will help simplify forms and provide better guidance to students.
-
----
-
-## 📂 Datasets
-
-### **1. Grade Appeals Dataset**
-
-| **Field**             | **Description**                                         |
-|-----------------------|-------------------------------------------------------|
-| **Appeal_ID**         | Unique identifier for each appeal                     |
-| **Student_ID**        | Identifier for the student filing the appeal          |
-| **Appeal_Type**       | Type of appeal (e.g., grade correction, re-evaluation) |
-| **Appeal_Status**     | Current status of the appeal                          |
-| **Decision**          | Outcome of the appeal                                 |
-| **Submission_Date**   | Date the appeal was submitted                         |
-| **Review_Committee**  | Committee reviewing the appeal                        |
-| **Resolution_Date**   | Date the appeal was resolved                          |
-| **Term_Appealed**     | Academic term when the appeal was filed               |
-| **Notes**             | Additional comments or notes                         |
-
-### **2. Clickstream Dataset**
-
-| **Field**             | **Description**                                          |
-|-----------------------|----------------------------------------------------------|
-| **Appeal_ID**         | Links clickstream data to the corresponding appeal       |
-| **Student_ID**        | Identifier for the student interacting with the form     |
-| **Action**            | Specific action taken (e.g., page visit, submission)     |
-| **Action_Timestamp**  | Timestamp of the action                                  |
-| **Page_URL**          | URL of the page where the action occurred               |
-| **Session_ID**        | Unique identifier for the session                       |
-| **Duration**          | Time spent on the specific action or page               |
-| **Page_Visited**      | Page being interacted with                              |
-
-### 🛠️ **Why These Datasets?**
-
-- **Grade Appeals Dataset**: Understand the nature, resolution, and outcomes of appeals.
-- **Clickstream Dataset**: Gain insights into user behavior and identify form-filling challenges.
-
----
-
-## 🔬 Methodology
-
-### 1️⃣ Descriptive Analysis
-
-1. **Data Collection & Preparation**:
-   - Ingest grade appeals and clickstream data into **Amazon S3**.
-   - Profile and clean data using **AWS Glue DataBrew**, handling missing values and formatting columns.
- ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png) 
-
-2. **Descriptive Statistics**:
-   - Generate summary statistics for numerical features and frequency distributions for categorical features.
-
-### 2️⃣ Diagnostic Analysis
-
-3. **Data Profiling & Cleaning**:
-   - Remove irrelevant columns, replace missing values, and format dates.
-   - Create an ETL pipeline using **AWS Glue** to join datasets.
-
-4. **Security Enhancements**:
-   - Enable encryption using **AWS KMS**.
-   - Implement **S3 bucket versioning** and backups with replication rules.
-   - Apply lifecycle rules to optimize storage costs.
-
-### 3️⃣ Exploratory Analysis
-
-5. **Data Analysis & Visualization**:
-   - Use **AWS Glue crawlers** to generate relational database tables.
-   - Run SQL queries in **AWS Athena** to analyze form-filling time and appeal outcome patterns.
-   - Visualize insights using **AWS ETL Dashboard**.
-
-### 4️⃣ Monitoring & Alerts
-
-6. **Monitoring Costs**:
-   - Create a dashboard in **AWS CloudWatch** to monitor service usage and costs.
-   - Set up alarms for cost threshold breaches.
-
----
-
-## 📈 Insights & Findings
-
-- 🕒 **Form-Filling Duration**: Complicated forms correlated with higher denial rates due to incomplete submissions.
-- 📝 **Improved Clarity**: Suggested measures to enhance form clarity and student guidance.
-
----
-
-## 🏁 Conclusion
-
-By integrating clickstream data and analyzing university grade appeals, we uncovered factors affecting appeal outcomes and identified ways to streamline the process. These findings aim to enhance user experience and improve the success rate of appeals.
-
----
-
-## 🛠️ Tools & Technologies
-
-| **Category**         | **Tool**                       |
-|----------------------|-------------------------------|
-| **Storage**          | Amazon S3                     |
-| **Data Profiling**   | AWS Glue DataBrew             |
-| **Server**           | Amazon EC2 (VPC Server)       |
-| **Data Collection**  | Clickstream data platform     |
-| **ETL**              | AWS Glue                      |
-| **Data Analysis**    | AWS Athena, SQL               |
-| **Visualization**    | AWS ETL Dashboard             |
-| **Security**         | AWS KMS, S3 Versioning        |
-| **Monitoring**       | AWS CloudWatch                |
-
-----
 
 # 2. 🌐 AWS Data Analytic Platform for the City of Vancouver
 
@@ -336,6 +206,138 @@ The project was structured into several phases, focusing on data ingestion, wran
 ## 🏁 Conclusion
 
 The AWS Data Analytic Platform for the City of Vancouver showcases how big data can be leveraged for municipal decision-making. With future enhancements, including machine learning models and global deployment strategies, the platform will further improve governance efficiency and sustainability.
+
+---
+
+# 2. 📊 Analysis of University Canada West's Grade Appeal Process
+
+---
+
+## ✨ Project Description
+
+Analyzing university grade appeal data to identify patterns in the appeal process and outcomes, improving the process by understanding time spent on form filling and reasons for appeal refusals.
+
+---
+
+## 🏷️ Project Title
+
+**University Grade Appeals Analysis:** An Exploratory, Descriptive, and Diagnostic Data Study
+
+---
+
+## 🎯 Objective
+
+To perform exploratory, descriptive, and diagnostic analyses on the university's grade appeal dataset, uncovering patterns, trends, and insights related to appeal decisions. By integrating clickstream data, we aim to enhance the form-filling process and improve appeal outcomes.
+
+---
+
+## 💡 Motivation
+
+This project aims to identify why some grade appeals were denied due to improper or incomplete form filling. By analyzing clickstream data tracking time spent on each form page, we hypothesized that complexity or confusion in the form-filling process contributes to denials. Insights will help simplify forms and provide better guidance to students.
+
+---
+
+## 📂 Datasets
+
+### **1. Grade Appeals Dataset**
+
+| **Field**             | **Description**                                         |
+|-----------------------|-------------------------------------------------------|
+| **Appeal_ID**         | Unique identifier for each appeal                     |
+| **Student_ID**        | Identifier for the student filing the appeal          |
+| **Appeal_Type**       | Type of appeal (e.g., grade correction, re-evaluation) |
+| **Appeal_Status**     | Current status of the appeal                          |
+| **Decision**          | Outcome of the appeal                                 |
+| **Submission_Date**   | Date the appeal was submitted                         |
+| **Review_Committee**  | Committee reviewing the appeal                        |
+| **Resolution_Date**   | Date the appeal was resolved                          |
+| **Term_Appealed**     | Academic term when the appeal was filed               |
+| **Notes**             | Additional comments or notes                         |
+
+### **2. Clickstream Dataset**
+
+| **Field**             | **Description**                                          |
+|-----------------------|----------------------------------------------------------|
+| **Appeal_ID**         | Links clickstream data to the corresponding appeal       |
+| **Student_ID**        | Identifier for the student interacting with the form     |
+| **Action**            | Specific action taken (e.g., page visit, submission)     |
+| **Action_Timestamp**  | Timestamp of the action                                  |
+| **Page_URL**          | URL of the page where the action occurred               |
+| **Session_ID**        | Unique identifier for the session                       |
+| **Duration**          | Time spent on the specific action or page               |
+| **Page_Visited**      | Page being interacted with                              |
+
+### 🛠️ **Why These Datasets?**
+
+- **Grade Appeals Dataset**: Understand the nature, resolution, and outcomes of appeals.
+- **Clickstream Dataset**: Gain insights into user behavior and identify form-filling challenges.
+
+---
+
+## 🔬 Methodology
+
+### 1️⃣ Descriptive Analysis
+
+1. **Data Collection & Preparation**:
+   - Ingest grade appeals and clickstream data into **Amazon S3**.
+   - Profile and clean data using **AWS Glue DataBrew**, handling missing values and formatting columns.
+ ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png) 
+
+2. **Descriptive Statistics**:
+   - Generate summary statistics for numerical features and frequency distributions for categorical features.
+
+### 2️⃣ Diagnostic Analysis
+
+3. **Data Profiling & Cleaning**:
+   - Remove irrelevant columns, replace missing values, and format dates.
+   - Create an ETL pipeline using **AWS Glue** to join datasets.
+
+4. **Security Enhancements**:
+   - Enable encryption using **AWS KMS**.
+   - Implement **S3 bucket versioning** and backups with replication rules.
+   - Apply lifecycle rules to optimize storage costs.
+
+### 3️⃣ Exploratory Analysis
+
+5. **Data Analysis & Visualization**:
+   - Use **AWS Glue crawlers** to generate relational database tables.
+   - Run SQL queries in **AWS Athena** to analyze form-filling time and appeal outcome patterns.
+   - Visualize insights using **AWS ETL Dashboard**.
+
+### 4️⃣ Monitoring & Alerts
+
+6. **Monitoring Costs**:
+   - Create a dashboard in **AWS CloudWatch** to monitor service usage and costs.
+   - Set up alarms for cost threshold breaches.
+
+---
+
+## 📈 Insights & Findings
+
+- 🕒 **Form-Filling Duration**: Complicated forms correlated with higher denial rates due to incomplete submissions.
+- 📝 **Improved Clarity**: Suggested measures to enhance form clarity and student guidance.
+
+---
+
+## 🏁 Conclusion
+
+By integrating clickstream data and analyzing university grade appeals, we uncovered factors affecting appeal outcomes and identified ways to streamline the process. These findings aim to enhance user experience and improve the success rate of appeals.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| **Category**         | **Tool**                       |
+|----------------------|-------------------------------|
+| **Storage**          | Amazon S3                     |
+| **Data Profiling**   | AWS Glue DataBrew             |
+| **Server**           | Amazon EC2 (VPC Server)       |
+| **Data Collection**  | Clickstream data platform     |
+| **ETL**              | AWS Glue                      |
+| **Data Analysis**    | AWS Athena, SQL               |
+| **Visualization**    | AWS ETL Dashboard             |
+| **Security**         | AWS KMS, S3 Versioning        |
+| **Monitoring**       | AWS CloudWatch                |
 
 ----
 
