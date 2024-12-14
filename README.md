@@ -95,6 +95,7 @@ The project was structured into several phases, focusing on data ingestion, wran
         
 ![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cov%20profiling%20and%20cleaning%20drawio.png)
 ![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Profiling%20UCW.png)
+
   2. **Data Wrangling**:
       - Applied **categorical mapping** (e.g., "Yes/No" to "1/0") to prepare qualitative data for analysis.
       - Transformed column data types for compatibility with downstream processes.
@@ -105,7 +106,7 @@ The project was structured into several phases, focusing on data ingestion, wran
       - Filtered out incomplete or invalid records.
       - Stored cleaned datasets in S3 buckets for further processing.
       
-!{c}(https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cleaning%20COV.png)
+![c](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cleaning%20COV.png)
 
 
 ---
@@ -122,6 +123,11 @@ The project was structured into several phases, focusing on data ingestion, wran
   3. Stored transformed datasets in **Parquet format** for efficient querying and reduced storage costs.
 
 
+ ![etl](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/ETL%201%20COV.png)
+ ![explore](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Exploratory%20cov.png)
+ 
+
+
 ---
 
 ### **4️⃣ Exploratory Analysis**
@@ -135,6 +141,7 @@ The project was structured into several phases, focusing on data ingestion, wran
       - Trends in contract types and department-specific performance.
   3. Exported query results for visualization.
 
+![catalog](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/catalog%20cov.png)
 ![athena](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Athena%20cov.png)
 
 ---
@@ -150,6 +157,8 @@ The project was structured into several phases, focusing on data ingestion, wran
   4. Implemented lifecycle policies to transition infrequently accessed data to Glacier storage, reducing costs.
   5. Conducted Architect Analysis to identify potential threats.
 
+![kms](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/KMS%20cov.png)
+![rules](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Rules%20cov.png)
 ![arch ana](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Architect%20Cov.png)
 
 ---
@@ -165,7 +174,7 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Set up **alerts** for cost thresholds to avoid overspending.
   3. Enabled **CloudTrail** to log all AWS API activity for governance.
  
-
+![dashboard](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/dashboard%20cov.png)
 
 
 ---
@@ -178,6 +187,7 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Identified key trends, such as no direct correlation between bid amounts and acceptance rates, highlighting the influence of qualitative factors.
   3. Recommended future use of machine learning for deeper analyses.
 
+![SQL](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/sql%20query%201%20cov.png)
 
 ---
 
@@ -281,8 +291,11 @@ This project aims to identify why some grade appeals were denied due to improper
    - Ingest grade appeals and clickstream data into **Amazon S3**.
    - Profile and clean data using **AWS Glue DataBrew**, handling missing values and formatting columns.
   
- ![
- ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png) 
+ 
+ ![drawio](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/drawio%20ucw.png)
+ ![ingestion](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Data%20Ingestion%20UCW.png)
+ ![dynamodb](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/DynamoDB%20UCW.png)
+ 
  
 2. **Descriptive Statistics**:
    - Generate summary statistics for numerical features and frequency distributions for categorical features.
@@ -296,13 +309,18 @@ This project aims to identify why some grade appeals were denied due to improper
    - Remove irrelevant columns, replace missing values, and format dates.
    - Create an ETL pipeline using **AWS Glue** to join datasets.
 
+![cleaning](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Catalog%20UCW.png)
+![profiling](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Profiling%20UCW.png)
+
 4. **Security Enhancements**:
    - Enable encryption using **AWS KMS**.
    - Implement **S3 bucket versioning** and backups with replication rules.
    - Apply lifecycle rules to optimize storage costs.
    - Use VPC endpoint to download data using the internet securely from a virtual server
 
-!endpoint](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/1.%20Create%20endpoint.png)
+![km](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/KMS%20UCW.png)
+![endpoint](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/1.%20Create%20endpoint.png)
+![lifecycle](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Lifecycle%20UCW.png)
 ![VS](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/2.%20Create%20a%20virtual%20machine%20UCW.png)
 ![backup](
 
