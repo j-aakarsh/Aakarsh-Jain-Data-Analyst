@@ -309,8 +309,8 @@ This project aims to identify why some grade appeals were denied due to improper
    - Remove irrelevant columns, replace missing values, and format dates.
    - Create an ETL pipeline using **AWS Glue** to join datasets.
 
-![cleaning](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Catalog%20UCW.png)
 ![profiling](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Profiling%20UCW.png)
+![quality](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/quality%20ucw.png)
 
 4. **Security Enhancements**:
    - Enable encryption using **AWS KMS**.
@@ -343,6 +343,7 @@ This project aims to identify why some grade appeals were denied due to improper
    - Set up alarms for cost threshold breaches.
 
 ![alarm](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Alarm%20UCW.png)
+![dashboard](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/dashboard%20ucw.png)
 
 ---
 
@@ -440,39 +441,50 @@ This project aims to uncover insights from customer credit data to help the bank
    - Normalized numerical features using standard scaling.
    - Removed irrelevant columns and handled outliers using the IQR method.
 
-   ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png)  
-   *Screenshot: Before and after data cleaning process showing missing values and outlier handling.*
+   ![path/to/cleaning_screenshot.png](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/profilini%20ml.png))
+   ![outlier](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/outlier%20ml.png)
+   
 
 ### 2️⃣ Exploratory Data Analysis (EDA)
 
 2. **Correlation Analysis**:
    - Analyzed correlations between features to determine which ones were most influential in predicting customer behavior.
 
-   ![Correlation Matrix](path/to/correlation_matrix.png)  
-   *Screenshot: Correlation matrix showing relationships between key variables.*
+   ![Correlation Matrix](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/correl%20ml.png)  
+  
 
 3. **Feature Engineering**:
    - Created new features such as **Util_Ratio** (credit utilization ratio) and **Change_Credit_Limit** (change in utilization) to better understand customer behavior.
 
-   ![Feature Engineering](path/to/feature_engineering.png)  
-   *Screenshot: Example of feature engineering process, showing how new features were derived.*
+   ![Feature Engineering](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/feature%20ml.png)  
+
 
 ### 3️⃣ Clustering and Marketing Strategy
 
 4. **Clustering**:
    - Applied **K-Means clustering** to segment customers into four distinct groups based on their credit card usage patterns.
 
-   ![Clustering Visualization](path/to/clustering_visualization.png)  
-   *Screenshot: Clustering visualization showing how customers are grouped into different segments.*
+    ![Clustering Visualization](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/elbow%20ml.png)
+    ![Clustering Visualization](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/cluster%20ml.png)  
+  
 
-5. **Marketing Strategy**:
+6. **Marketing Strategy**:
    - Developed personalized marketing strategies for each cluster:
      - **Cluster 0**: Customers using credit cards from other banks—target with offers to switch to the bank’s credit card.
      - **Cluster 1**: Low credit card usage—encourage increased usage with incentives.
      - **Cluster 2 & 3**: High usage—focus on loyalty programs and premium offers.
 
-   ![Marketing Strategy Overview](path/to/marketing_strategy.png)  
-   *Screenshot: Overview of marketing strategies tailored for each customer segment.*
+| Feature                | Cluster 0       | Cluster 1       | Cluster 2       | Cluster 3       |
+|------------------------|-----------------|-----------------|-----------------|-----------------|
+| Length/volume          | 1778           | 3286           | 1343           | 2756           |
+| Credit Limit           | ≈ 0 - 20K +    | ≈ 0 - 10k      | ≈ 0 - 8K       | ≈ 0 - 20K +    |
+| Total_Trans_Amt        | Max 17500      | Max 17500      | Max 5000       | Max 9500       |
+| Total_Ct_Chng_Q4_Q1    | ≈ 0.4 – 1.2    | ≈ 0.4 – 1.2    | 0.5 < <br> 1 > | 0.5 < <br> 1 > |
+| Avg_Utilization_Ratio  | ≈ 0 – 0.4      | ≈ 0 – 0.5      | ≈ 0 - 1        | ≈ 0 - 1        |
+| Util_Ratio             | ≈ 0 - 1.4      | ≈ 1 - 5        | ≈ 0 - 1.4      | ≈ 0 – 0.5      |
+| change_Credit_Limit_utilization         | ≈ MAX 1        | ≈ MAX 5        | ≈ Max 1.2      | ≈ Max 0.3      |
+| Priority               | 3              | 1              | 4              | 2              |
+
 
 ---
 
@@ -503,5 +515,5 @@ By segmenting customers based on their credit card usage, this project provides 
 
 ### **Try It Yourself**  
 The code for this project is available on Google Colab. You can access and run it interactively using the link below:  
-[Explore the Code on Google Colab](https://colab.research.google.com/drive/1tFhckznvRLKgXEcIAim9pJ2OoXjEMYHv?usp=sharing)
+[Explore the Code on Google Colab](https://github.com/j-aakarsh/data-analyst/blob/28d7a21bad52991987a40072876f39f07ffdbb92/group_project.ipynb)
 
