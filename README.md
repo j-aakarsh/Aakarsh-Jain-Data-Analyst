@@ -86,6 +86,7 @@ This project aims to identify why some grade appeals were denied due to improper
 1. **Data Collection & Preparation**:
    - Ingest grade appeals and clickstream data into **Amazon S3**.
    - Profile and clean data using **AWS Glue DataBrew**, handling missing values and formatting columns.
+ ![Data Cleaning Screenshot](path/to/cleaning_screenshot.png) 
 
 2. **Descriptive Statistics**:
    - Generate summary statistics for numerical features and frequency distributions for categorical features.
