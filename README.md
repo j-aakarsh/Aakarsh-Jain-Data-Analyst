@@ -50,6 +50,7 @@ Modern cities rely on big data to improve governance. This project focuses on us
 
 Primary Source of Data:
 ![alt image](https://github.com/j-aakarsh/Aakarsh-Jain-Data-Analyst/blob/main/Primary%20data%20COV.png?raw=true)
+![](https://github.com/j-aakarsh/Aakarsh-Jain-Data-Analyst/blob/main/Primary%20data%20COV.png)
 
 
 | **Field**             | **Description**                                      |
