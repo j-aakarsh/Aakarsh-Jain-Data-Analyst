@@ -49,7 +49,7 @@ Modern cities rely on big data to improve governance. This project focuses on us
 ### **1. Bid and Contract Dataset**
 
 Primary Source of Data:
-![alt image](https://github.com/j-aakarsh/data-analyst/blob/3ed45b944306a20f2f24f6e31ca49f7e4bd88434/Primary%20data%20COV.png)
+![alt image](https://github.com/j-aakarsh/Aakarsh-Jain-Data-Analyst/blob/8c75cdfce9f888274d1f40eb008dcbabda09e443/Primary%20data%20COV.png)
 
 
 | **Field**             | **Description**                                      |
