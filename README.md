@@ -78,6 +78,7 @@ The project was structured into several phases, focusing on data ingestion, wran
   2. Configured S3 buckets for optimal organization with folders for raw, cleaned, and curated datasets.
   3. Applied **encryption** using AWS Key Management Service (KMS) to secure the data during and after upload.
 
+
 ![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/cov%20ingestion.png) 
 ![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/Ingestion%20cov%201.png)
 ![KMS](https://github.com/j-aakarsh/data-analyst/blob/0515601c06ae1abbc62cf6941a81048bb3b0138c/KMS%20cov.png)
