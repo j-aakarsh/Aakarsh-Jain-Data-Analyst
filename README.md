@@ -79,6 +79,8 @@ The project was structured into several phases, focusing on data ingestion, wran
   3. Applied **encryption** using AWS Key Management Service (KMS) to secure the data during and after upload.
 
 
+![Primary data COV](https://github.com/user-attachments/assets/ee224cd4-5a51-4bbb-bba7-e03d7d5a2802)
+
 ![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/cov%20ingestion.png) 
 ![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/Ingestion%20cov%201.png)
 ![KMS](https://github.com/j-aakarsh/data-analyst/blob/0515601c06ae1abbc62cf6941a81048bb3b0138c/KMS%20cov.png)
