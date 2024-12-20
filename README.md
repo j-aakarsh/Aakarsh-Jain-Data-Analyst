@@ -1,5 +1,7 @@
 # Aakarsh Jain
 # 👋 About Me  
+![IMG_20180404_201505_Original](https://github.com/user-attachments/assets/91e25b75-cdc3-4988-a2d4-5cb970a3832e)
+
 Hi! I'm a passionate **Data Analyst** and aspiring **Machine Learning Enthusiast** with a background in **Mechanical Engineering** and an MBA specializing in **AI applications**. I  thrive at the intersection of technology and innovation, driving **data-driven solutions** to real-world challenges, including **sustainability** and **renewable energy**. With hands-on experience in building **ETL pipelines**, applying **machine learning algorithms**, and implementing **advanced data analytics**, I'm constantly exploring how data can solve complex problems.
 ## 🔍 What I Do  
 - 🧠 Built machine learning models, including a **KNN-based clustering model** for banking credit card data.  
@@ -49,7 +51,8 @@ Modern cities rely on big data to improve governance. This project focuses on us
 ### **1. Bid and Contract Dataset**
 
 Primary Source of Data:
-![](https://github.com/j-aakarsh/Aakarsh-Jain-Data-Analyst/blob/main/Primary%20data%20COV.png)
+![Primary data COV](https://github.com/user-attachments/assets/f41a4cd2-df01-47a3-ab24-9525531fe00d)
+
 
 | **Field**             | **Description**                                      |
 |-----------------------|------------------------------------------------------|
@@ -79,11 +82,9 @@ The project was structured into several phases, focusing on data ingestion, wran
   3. Applied **encryption** using AWS Key Management Service (KMS) to secure the data during and after upload.
 
 
-![Primary data COV](https://github.com/user-attachments/assets/ee224cd4-5a51-4bbb-bba7-e03d7d5a2802)
-
-![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/cov%20ingestion.png) 
-![ingestion](https://github.com/j-aakarsh/data-analyst/blob/main/Ingestion%20cov%201.png)
-![KMS](https://github.com/j-aakarsh/data-analyst/blob/0515601c06ae1abbc62cf6941a81048bb3b0138c/KMS%20cov.png)
+<img width="1470" alt="cov ingestion" src="https://github.com/user-attachments/assets/a867a0dd-cebf-4f22-ba5a-f4501bfc376c" />
+![Ingestion cov 1](https://github.com/user-attachments/assets/9028f68b-6a6c-4e6b-a64f-99f66e68974d)
+![KMS cov](https://github.com/user-attachments/assets/805c7723-4e4c-4c6a-8a42-17dfbbe50e6f)
 
 ---
 
@@ -96,8 +97,9 @@ The project was structured into several phases, focusing on data ingestion, wran
       - Used AWS Glue DataBrew to profile data for completeness, missing values, and duplicates.
       - Generated summaries to visualize inconsistencies, null values, and data distributions.
         
-![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/cov%20profiling%20and%20cleaning%20drawio.png)
-![pnc](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Profiling%20UCW.png)
+<img width="1470" alt="cov profiling and cleaning drawio" src="https://github.com/user-attachments/assets/1819f4f8-91fd-4f9e-82b4-a1d3749b8a17" />
+<img width="1469" alt="Profiling UCW" src="https://github.com/user-attachments/assets/f64df607-4fea-4ac1-bd93-a5e9ba1f3064" />
+
 
   2. **Data Wrangling**:
       - Applied **categorical mapping** (e.g., "Yes/No" to "1/0") to prepare qualitative data for analysis.
