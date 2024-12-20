@@ -319,21 +319,24 @@ This project aims to identify why some grade appeals were denied due to improper
    - Remove irrelevant columns, replace missing values, and format dates.
    - Create an ETL pipeline using **AWS Glue** to join datasets.
 
+<img width="1469" alt="Profiling UCW" src="https://github.com/user-attachments/assets/fcd6cb1d-4208-40c3-9265-ccd7f52df0a3" />
+<img width="1468" alt="quality ucw" src="https://github.com/user-attachments/assets/02ff27e9-06f8-497d-ae41-98de4d32414b" />
 
-![profiling](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Profiling%20UCW.png)
-![quality](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/quality%20ucw.png)
+
 
 4. **Security Enhancements**:
    - Enable encryption using **AWS KMS**.
    - Implement **S3 bucket versioning** and backups with replication rules.
    - Apply lifecycle rules to optimize storage costs.
    - Use VPC endpoint to download data using the internet securely from a virtual server
+  
+<img width="1470" alt="KMS UCW" src="https://github.com/user-attachments/assets/8d4d163f-9878-453f-b529-d00ceb9c4eea" />
+<img width="1470" alt="Backup Buckets" src="https://github.com/user-attachments/assets/48567860-9d92-4c8e-b419-3004977fe58a" />
+<img width="1470" alt="Versioning UCW" src="https://github.com/user-attachments/assets/10a5bf0f-65d9-440d-85e6-db2bf6a3b552" />
+<img width="1470" alt="1  Create endpoint" src="https://github.com/user-attachments/assets/e24c9354-74e9-4ce4-9066-1406e2c3cfe6" />
+<img width="1470" alt="Lifecycle UCW" src="https://github.com/user-attachments/assets/0aaef994-0eff-4ab8-bc2f-728d235c4b56" />
+<img width="1470" alt="2  Create a virtual machine UCW" src="https://github.com/user-attachments/assets/01d2be8c-04c0-45e4-8b10-0057eec1fac2" />
 
-![km](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/KMS%20UCW.png)
-![endpoint](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/1.%20Create%20endpoint.png)
-![lifecycle](https://github.com/j-aakarsh/data-analyst/blob/ed5bcc1174fe595e6f06f084f0638a7766ab51d5/Lifecycle%20UCW.png)
-![VS](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/2.%20Create%20a%20virtual%20machine%20UCW.png)
-![backup](
 
 
 ### 3️⃣ Exploratory Analysis
@@ -343,9 +346,11 @@ This project aims to identify why some grade appeals were denied due to improper
    - Run SQL queries in **AWS Athena** to analyze form-filling time and appeal outcome patterns.
    - Visualize insights using **AWS ETL Dashboard**.
 
-![glue](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/AWS%20Glue%20UCW.png)
-![catalog](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Catalog%20UCW.png)
-![athena](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Athena%20UCW.png)
+<img width="1470" alt="AWS Glue UCW" src="https://github.com/user-attachments/assets/91a05ba8-7652-4f5e-a4e9-c70393a719db" />
+<img width="1470" alt="Catalog UCW" src="https://github.com/user-attachments/assets/26727640-b21d-468c-82e9-3db7332b33b4" />
+<img width="1470" alt="Athena UCW" src="https://github.com/user-attachments/assets/20915a80-f376-4086-bf8c-860b46b70955" />
+
+
 
 ### 4️⃣ Monitoring & Alerts
 
@@ -353,8 +358,9 @@ This project aims to identify why some grade appeals were denied due to improper
    - Create a dashboard in **AWS CloudWatch** to monitor service usage and costs.
    - Set up alarms for cost threshold breaches.
 
-![alarm](https://github.com/j-aakarsh/data-analyst/blob/719242c99d707bc1661aac0d6a98e449f70b1bb4/Alarm%20UCW.png)
-![dashboard](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/dashboard%20ucw.png)
+<img width="1470" alt="Alarm UCW" src="https://github.com/user-attachments/assets/a30c649d-f1b6-41ed-b55d-1369b43a1679" />
+<img width="1353" alt="dashboard ucw" src="https://github.com/user-attachments/assets/77dc59ae-2439-486c-9366-e8f03a78cbed" />
+
 
 ---
 
@@ -452,31 +458,32 @@ This project aims to uncover insights from customer credit data to help the bank
    - Normalized numerical features using standard scaling.
    - Removed irrelevant columns and handled outliers using the IQR method.
 
-   ![path/to/cleaning_screenshot.png](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/profilini%20ml.png))
-   ![outlier](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/outlier%20ml.png)
-   
+![profilini ml](https://github.com/user-attachments/assets/af4569c7-ac74-4b26-aedb-e29d6a0da900)
+![outlier ml](https://github.com/user-attachments/assets/87f2b2ac-ca8f-4eab-b880-0b57be934227)
+
 
 ### 2️⃣ Exploratory Data Analysis (EDA)
 
 2. **Correlation Analysis**:
    - Analyzed correlations between features to determine which ones were most influential in predicting customer behavior.
+     
+![correl ml](https://github.com/user-attachments/assets/080d418e-9743-4bf1-a414-21926596b1be)
 
-   ![Correlation Matrix](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/correl%20ml.png)  
-  
 
 3. **Feature Engineering**:
    - Created new features such as **Util_Ratio** (credit utilization ratio) and **Change_Credit_Limit** (change in utilization) to better understand customer behavior.
 
-   ![Feature Engineering](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/feature%20ml.png)  
-
+<img width="956" alt="feature ml" src="https://github.com/user-attachments/assets/4125f986-142d-46ae-b8a5-a4b2ea60d661" />
 
 ### 3️⃣ Clustering and Marketing Strategy
 
 4. **Clustering**:
    - Applied **K-Means clustering** to segment customers into four distinct groups based on their credit card usage patterns.
 
-    ![Clustering Visualization](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/elbow%20ml.png)
-    ![Clustering Visualization](https://github.com/j-aakarsh/data-analyst/blob/3451677087755bb6669a12cabc42d27f8f3126ee/cluster%20ml.png)  
+<img width="408" alt="elbow ml" src="https://github.com/user-attachments/assets/b52018c7-514c-4a00-b08c-2e54c4354dc4" />
+![cluster ml](https://github.com/user-attachments/assets/94a5126f-f393-45ee-ab89-78f8d801c25d)
+
+
   
 
 6. **Marketing Strategy**:
