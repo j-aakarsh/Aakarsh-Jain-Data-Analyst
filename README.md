@@ -319,8 +319,10 @@ This project aims to identify why some grade appeals were denied due to improper
    - Remove irrelevant columns, replace missing values, and format dates.
    - Create an ETL pipeline using **AWS Glue** to join datasets.
 
-<img width="1469" alt="Profiling UCW" src="https://github.com/user-attachments/assets/fcd6cb1d-4208-40c3-9265-ccd7f52df0a3" />
-<img width="1468" alt="quality ucw" src="https://github.com/user-attachments/assets/02ff27e9-06f8-497d-ae41-98de4d32414b" />
+<img width="1469" alt="Profiling UCW" src="https://github.com/user-attachments/assets/6bbcf541-1dca-4c88-8e3e-f526f988e612" />
+<img width="1468" alt="quality ucw" src="https://github.com/user-attachments/assets/e3f7795b-b25b-4e98-a066-6095aa745a34" />
+
+
 
 
 
